@@ -1,3 +1,8 @@
+import os
+
+def get_api_key():
+    return os.getenv("CLAIMS_API_KEY")
+
 def check_claims():
     print("Claims data quality check running")
 
@@ -15,3 +20,9 @@ def find_duplicate_claim_ids(claim_ids):
 
 if __name__ == "__main__":
     check_claims()
+    api_key = get_api_key()
+
+    if api_key:
+        print("API key is available")
+    else:
+        print("API key is missing")

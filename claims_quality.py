@@ -11,7 +11,8 @@ def find_duplicate_claim_ids(claim_ids):
         if claim_ids.count(claim_id) > 1
     }
 
-    return list(duplicates)
+    #return list(duplicates)
+    return []
 
 if __name__ == "__main__":
     check_claims()

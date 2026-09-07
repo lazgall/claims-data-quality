@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  CLAIMS_API_KEY: ${{ secrets.CLAIMS_API_KEY }}
+
 jobs:
   test:
     runs-on: ubuntu-latest
